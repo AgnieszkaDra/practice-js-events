@@ -1,6 +1,11 @@
 
 const button = document.querySelector('button')
 
-button.addEventListener('click', function(){
+if(button){
+    button.addEventListener('click', handleClick)
+}
+
+
+function handleClick() {
     console.log('click')
-})
+}
