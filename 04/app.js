@@ -2,10 +2,14 @@
 const elDivs = document.querySelectorAll('div')
 const body = document.querySelector('body')
 
+
 function addClassName(e) {
 
-    return e.currentTarget.classList.add('clicked')
-
+    const getTime = this.dataset.time
+    setTimeout(()=>{
+        console.log(e.target)
+       return e.target.classList.add('clicked') 
+    }, getTime)
 }
 
 function removeClassName(el) {
