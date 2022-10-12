@@ -6,9 +6,10 @@ const body = document.querySelector('body')
 function addClassName(e) {
 
     const getTime = this.dataset.time
+    const self = this
     setTimeout(()=>{
         console.log(e.target)
-       return e.target.classList.add('clicked') 
+       return self.classList.add('clicked') 
     }, getTime)
 }
 
